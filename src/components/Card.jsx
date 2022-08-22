@@ -15,7 +15,7 @@ const Card = ({ post }) => {
           <div className="circle-1 "></div>
           <div className="circle-2 "></div>
         </div>
-        <h2>{post.name}</h2>
+        <h2>{post.title}</h2>
         <p>{post.content} </p>
 
         <div className="author_container">
