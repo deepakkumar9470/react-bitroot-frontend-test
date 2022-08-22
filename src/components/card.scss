@@ -1,0 +1,108 @@
+@import '../variables.scss';
+
+.card_container{
+    // width: 100%;
+    // height: 100vh;
+    // display: flex;
+    // align-items: center;
+    // margin: 50px;
+    margin-top: 50px;
+    // display: flex;
+    // justify-content: space-around;
+    // flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+  
+    .card{
+      width: 100%;
+      border-radius: 5px 5px 0 0;
+      box-shadow: 1px 2px 2px   rgba(0,0,0,0.5);
+      margin-bottom: 10px;
+   
+    }
+    .card h2{
+      font-size: 28px;
+      letter-spacing: 0.2px;
+      font-weight: bold;
+      margin:  0 auto;
+      color: $title-1;
+      padding: 25px 10px;
+      
+    }
+   
+    .card p{
+      font-size: 18px;
+      padding: 10px 20px;
+      font-weight: bold;
+      color: $text;
+    }
+    .card span{
+      font-size: 12px;
+      font-weight: 500;
+      text-align: center;
+      margin: 5px 0;
+    }
+    .card img{
+      width: 100%;
+      height: 200px;
+      border-radius: 5px 5px 0 0;
+      box-shadow: 5px -5px 5px  rgba(0,0,0,0.2);
+      
+    }
+    
+  .circles{
+    display: flex;
+    padding: 10px 15px;
+    gap:5px;
+    .circle-1{
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: $circle-color-1;
+     
+    }
+
+    .circle-2{
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: $circle-color-2;
+    
+  }
+  
+  } 
+    
+    
+
+    .author_container{
+      display: flex;
+      justify-content: space-between;
+      padding:5px 10px;
+      .author span{
+        font-size: 14px;
+        font-weight: 700;
+        color: $title;
+      }
+      .date{
+        font-size: 14px;
+        font-weight: 700;
+        color: $title;
+      }
+    }
+    
+    
+   
+  }
+  
+
+  @media screen and (max-width: 1200px) {
+      .card{
+        width: 50%;
+      }
+  }
+  @media screen and (max-width: 600px) {
+    .card{
+      width: 90%;
+    }
+}
